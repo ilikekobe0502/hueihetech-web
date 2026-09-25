@@ -1,3 +1,3 @@
 User-agent: *
 Allow: /
-Sitemap: https://ilikekobe0502.github.io/hueihetech-web/sitemap.xml
+Sitemap: https://hueihetech.com/sitemap.xml
