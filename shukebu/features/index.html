@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>功能介紹｜熟客簿——銷售顧問的 AI 客戶管家</title>
+<meta name="description" content="熟客簿功能總覽：LINE 速記、語音速記、智慧提醒與行事曆、AI 擬訊、貨找人、業績追蹤。30 秒講完，客人的一切幫你記住。">
+<link rel="icon" href="../../assets/favicon.png">
+<link rel="stylesheet" href="../../assets/site.css">
+<meta property="og:title" content="功能介紹｜熟客簿">
+<meta property="og:description" content="LINE 速記、語音速記、智慧提醒、AI 擬訊、貨找人——銷售顧問的 AI 客戶管家。">
+<meta property="og:image" content="../../assets/shukebu-icon.png">
+<style>
+.feat{display:flex;gap:44px;align-items:flex-start;flex-wrap:wrap;margin-top:40px}
+.feat .txt{flex:1;min-width:280px}
+.feat .fig{flex:1;min-width:280px;display:flex;justify-content:center}
+.feat h3{font-size:22px}
+.feat .tagline{color:var(--brand);font-weight:700;font-size:14px;letter-spacing:.5px}
+.feat p{color:var(--ink-2);margin-top:10px;font-size:15.5px}
+.feat ul{margin-top:12px;padding-left:0;list-style:none}
+.feat li{color:var(--ink-2);font-size:15px;padding-left:26px;position:relative;margin-top:8px}
+.feat li::before{content:"✓";position:absolute;left:0;color:var(--brand);font-weight:700}
+.newbadge{display:inline-block;background:var(--teal-soft);color:var(--brand-dark);border:1px solid #99f6e4;font-size:11.5px;font-weight:800;border-radius:6px;padding:2px 8px;vertical-align:3px;margin-left:8px}
+.divider{border:none;border-top:1px solid var(--line);margin-block:56px}
+/* LINE 風格聊天示意 */
+.chat{width:min(340px,86vw);background:#8cabd9;border-radius:20px;padding:14px 12px;box-shadow:0 18px 44px rgba(15,23,42,.18)}
+.chat .bar{color:#fff;font-weight:700;font-size:14px;text-align:center;padding-bottom:10px}
+.chat .msg{max-width:84%;border-radius:14px;padding:9px 12px;font-size:13.5px;line-height:1.55;margin-top:8px}
+.chat .me{background:#9ef01a33;background:#b7f3a0;margin-left:auto;border-bottom-right-radius:4px;color:#1a2e05}
+.chat .bot{background:#fff;border-bottom-left-radius:4px;color:#0f172a}
+.chat .voice{display:flex;align-items:center;gap:8px;font-weight:600}
+.chat .voice .wave{letter-spacing:1.5px;color:#3f6212}
+.chat .cardx{background:#fff;border-radius:14px;overflow:hidden;margin-top:8px;max-width:88%}
+.chat .cardx .hd{background:var(--brand);color:#fff;font-weight:700;font-size:13px;padding:8px 12px}
+.chat .cardx .bd{padding:10px 12px;font-size:12.5px;color:#334155;line-height:1.7}
+.chat .cardx .bd b{color:#0f172a}
+.chat .cardx .ok{margin:0 10px 10px;background:var(--brand);color:#fff;text-align:center;border-radius:9px;font-size:13px;font-weight:700;padding:8px}
+</style>
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap">
+    <a class="logo" href="../"><img src="../../assets/shukebu-icon.png" alt="熟客簿">熟客簿</a>
+    <nav>
+      <a href="../">產品首頁</a>
+      <a class="cta" href="#download">免費試用 14 天</a>
+    </nav>
+  </div>
+</header>
+
+<div class="hero" style="padding-block:64px 48px">
+  <div class="wrap">
+    <h1 style="font-size:clamp(26px,4.4vw,38px)">熟客簿能幫你做什麼？</h1>
+    <p class="sub">從「記下來」到「行動」，一條龍的熟客經營動線</p>
+  </div>
+</div>
+
+<section style="padding-block:56px">
+  <div class="wrap">
+
+    <!-- LINE 速記 -->
+    <div class="feat" id="line">
+      <div class="txt">
+        <div class="tagline">記</div>
+        <h3>LINE 速記<span class="newbadge">NEW</span></h3>
+        <p>忙到連 App 都懶得開？加「熟客簿」官方帳號好友，<b>直接在 LINE 裡傳語音或打字</b>，AI 自動整理成客戶檔案。</p>
+        <ul>
+          <li>下班路上對 LINE 講一句：「剛見完王先生，對儲蓄險有興趣，下週三聯絡」</li>
+          <li>AI 回一張確認卡：客戶、摘要、提醒日期，看過沒問題按「確認寫入」</li>
+          <li>連續傳好幾則？自動幫你合併成同一筆記錄</li>
+          <li>講到的客戶自動比對；分不清楚時列出候選讓你選，不會寫錯人</li>
+        </ul>
+      </div>
+      <div class="fig">
+        <div class="chat" role="img" aria-label="LINE 速記對話示意">
+          <div class="bar">熟客簿</div>
+          <div class="msg me voice"><span>🎙</span><span class="wave">▂▃▅▃▂▅▃▂▃▅▂</span><span>0:18</span></div>
+          <div class="cardx">
+            <div class="hd">📋 幫妳整理好了</div>
+            <div class="bd">
+              客戶：<b>王先生</b><br>
+              摘要：對儲蓄險有興趣，小孩明年出國<br>
+              ⏰ 提醒：10/14（三）回電跟進
+            </div>
+            <div class="ok">✅ 確認寫入</div>
+          </div>
+          <div class="msg bot">✅ 已寫入客戶檔案，提醒也設好了 ⏰</div>
+        </div>
+      </div>
+    </div>
+
+    <hr class="divider">
+
+    <!-- 語音速記 -->
+    <div class="feat" id="voice">
+      <div class="txt">
+        <div class="tagline">記</div>
+        <h3>語音速記</h3>
+        <p>在 App 裡按住就講，30 秒講完一位客人。AI 自動抽出<b>偏好、預算、願望清單、待辦</b>，分門別類放進客戶檔案——不用打一個字。</p>
+        <ul>
+          <li>「林太太喜歡 36mm 的錶、預算 50 萬、女兒 12 月結婚要包套」→ 一句話，四筆資料各就各位</li>
+          <li>聽不清楚、環境音太吵會請你重錄，不會寫進錯的內容</li>
+          <li>行業標籤可自訂：珠寶、保險、房仲、美業……各有一套語言</li>
+        </ul>
+      </div>
+      <div class="fig"><img src="../../assets/phone-voice.png" alt="語音速記畫面" style="width:min(260px,70vw);border-radius:20px;box-shadow:0 18px 44px rgba(15,23,42,.18)" loading="lazy"></div>
+    </div>
+
+    <hr class="divider">
+
+    <!-- 智慧提醒＋行事曆 -->
+    <div class="feat" id="remind">
+      <div class="txt">
+        <div class="tagline">醒</div>
+        <h3>智慧提醒 × 行事曆<span class="newbadge">行事曆 NEW</span></h3>
+        <p>生日、紀念日、回訪、保養到期——時間到自動提醒你。新的<b>行事曆視圖</b>把提醒、壽星、成交全放在同一個月曆上，一眼掌握。</p>
+        <ul>
+          <li>填一次生日，每年自動提醒，還能一鍵生成祝賀訊息</li>
+          <li>太久沒聯絡的客人，自動列進「需要關注」叫你去喚醒</li>
+          <li>月曆上藍點是提醒、琥珀點是生日、綠點是成交，逾期變紅</li>
+        </ul>
+      </div>
+      <div class="fig"><img src="../../assets/phone-home.png" alt="智慧提醒畫面" style="width:min(260px,70vw);border-radius:20px;box-shadow:0 18px 44px rgba(15,23,42,.18)" loading="lazy"></div>
+    </div>
+
+    <hr class="divider">
+
+    <!-- AI 擬訊 -->
+    <div class="feat" id="draft">
+      <div class="txt">
+        <div class="tagline">動</div>
+        <h3>AI 擬訊</h3>
+        <p>該聯絡了，但第一句怎麼開口？AI 認識你的客人——依<b>偏好、最近互動、場合</b>生成三種語氣的訊息草稿，挑一個複製貼到 LINE 就能傳。</p>
+        <ul>
+          <li>生日祝賀、新品通知、離店關懷、久未回訪，各有合適的口吻</li>
+          <li>貼心但不油膩：會提到她在意的事，不會像罐頭群發</li>
+        </ul>
+      </div>
+      <div class="fig"><img src="../../assets/phone-draft.png" alt="AI 擬訊畫面" style="width:min(260px,70vw);border-radius:20px;box-shadow:0 18px 44px rgba(15,23,42,.18)" loading="lazy"></div>
+    </div>
+
+    <hr class="divider">
+
+    <!-- 其他功能 cards -->
+    <h2 class="sec" style="margin-top:8px">還有這些，每天都用得上</h2>
+    <div class="cards">
+      <div class="card">
+        <div class="num">✦</div>
+        <h3>貨找人</h3>
+        <p>新品到貨拍張照，AI 自動比對哪些客人在找這樣的商品，附上匹配原因——不再靠記憶翻名單。</p>
+      </div>
+      <div class="card">
+        <div class="num">✦</div>
+        <h3>業績與成交</h3>
+        <p>月目標進度圈、成交紀錄、月成交明細；報價單建檔跟進，報出去的單不漏追。</p>
+      </div>
+      <div class="card">
+        <div class="num">✦</div>
+        <h3>完整客戶檔案</h3>
+        <p>大頭貼、偏好、願望清單、互動時間軸、購買紀錄——這位客人的一切，一頁看完。</p>
+      </div>
+      <div class="card">
+        <div class="num">✦</div>
+        <h3>隱私與安全</h3>
+        <p>資料加密儲存、生物辨識鎖；Stealth Mode 在公共場合只顯示代號，客人姓名電話不外露。</p>
+      </div>
+      <div class="card">
+        <div class="num">✦</div>
+        <h3>多種登入方式</h3>
+        <p>Email、Google、Apple 登入自由連結；換手機資料都在，離職轉職帶著走。</p>
+      </div>
+      <div class="card">
+        <div class="num">✦</div>
+        <h3>行業模板</h3>
+        <p>珠寶、精品、鐘錶、服飾、保險、房仲、汽車、美業——標籤與提醒類型照你的行業來。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="alt">
+  <div class="wrap" style="text-align:center">
+    <h2 class="sec">今天接待的客人，別讓明天忘記</h2>
+    <div class="badges" id="download" style="justify-content:center;margin-top:28px">
+      <a class="badge-btn" href="https://apps.apple.com/tw/app/id6811958084" target="_blank" rel="noopener">
+        <span><small>Download on the</small>App Store</span>
+      </a>
+      <a class="badge-btn" href="https://play.google.com/store/apps/details?id=com.hueihetech.veloce" target="_blank" rel="noopener">
+        <span><small>GET IT ON</small>Google Play</span>
+      </a>
+    </div>
+    <p style="color:var(--muted);font-size:13.5px;margin-top:14px">免費試用 14 天・不用綁信用卡</p>
+  </div>
+</section>
+
+<footer class="site">
+  <div class="wrap">
+    <div class="cols">
+      <div>
+        <div class="brandline"><img src="../../assets/shukebu-icon.png" alt="">熟客簿</div>
+        <p style="margin-top:10px">by 暉和智慧科技有限公司</p>
+        <p><a href="mailto:support@hueihetech.com">support@hueihetech.com</a></p>
+      </div>
+      <div>
+        <p><a href="../../">公司首頁</a></p>
+        <p><a href="../">產品首頁</a></p>
+        <p><a href="../../legal/privacy.html">隱私權政策</a></p>
+        <p><a href="../../legal/terms.html">服務條款</a></p>
+      </div>
+    </div>
+    <p class="fine">© 2026 暉和智慧科技有限公司 All rights reserved.</p>
+  </div>
+</footer>
+
+</body>
+</html>
