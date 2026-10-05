@@ -64,6 +64,10 @@ footer.site .fine{margin-top:22px;color:#64748b;font-size:12.5px}
 .legal-body ul{padding-left:22px}
 
 @media (max-width:640px){
-  nav a:not(.cta){display:none}
+  nav a{margin-left:12px;font-size:13px}
+  nav a.cta{padding:7px 12px}
+  .logo{font-size:15px;gap:7px}
+  .logo img{width:26px;height:26px}
+  header.site .wrap{padding-inline:14px}
   .hero{padding-block:64px 52px}
 }
