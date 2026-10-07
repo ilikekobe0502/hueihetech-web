@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://hueihetech.com/</loc><priority>1.0</priority></url>
-  <url><loc>https://hueihetech.com/shukebu/</loc><priority>0.9</priority></url>
-  <url><loc>https://hueihetech.com/services/</loc><priority>0.9</priority></url>
-  <url><loc>https://hueihetech.com/legal/privacy.html</loc><priority>0.2</priority></url>
-  <url><loc>https://hueihetech.com/legal/terms.html</loc><priority>0.2</priority></url>
-  <url><loc>https://hueihetech.com/legal/delete-account.html</loc><priority>0.2</priority></url>
-  <url><loc>https://hueihetech.com/shukebu/features/</loc></url>
+  <url><loc>https://hueihetech.com/</loc><lastmod>2026-10-07</lastmod><priority>1.0</priority></url>
+  <url><loc>https://hueihetech.com/shukebu/</loc><lastmod>2026-10-07</lastmod><priority>0.9</priority></url>
+  <url><loc>https://hueihetech.com/services/</loc><lastmod>2026-10-07</lastmod><priority>0.9</priority></url>
+  <url><loc>https://hueihetech.com/legal/privacy.html</loc><lastmod>2026-10-07</lastmod><priority>0.2</priority></url>
+  <url><loc>https://hueihetech.com/legal/terms.html</loc><lastmod>2026-10-07</lastmod><priority>0.2</priority></url>
+  <url><loc>https://hueihetech.com/legal/delete-account.html</loc><lastmod>2026-10-07</lastmod><priority>0.2</priority></url>
+  <url><loc>https://hueihetech.com/shukebu/features/</loc><lastmod>2026-10-07</lastmod></url>
 </urlset>
