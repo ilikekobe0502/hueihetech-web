@@ -36,6 +36,20 @@
 .chat .cardx .bd{padding:10px 12px;font-size:12.5px;color:#334155;line-height:1.7}
 .chat .cardx .bd b{color:#0f172a}
 .chat .cardx .ok{margin:0 10px 10px;background:var(--brand);color:#fff;text-align:center;border-radius:9px;font-size:13px;font-weight:700;padding:8px}
+/* LINE 官方帳號：LINE 聊天 → 熟客簿 App 客戶檔案 */
+.oaflow{width:min(340px,86vw);display:flex;flex-direction:column;align-items:stretch}
+.oaflow .chat{width:100%}
+.oaarrow{text-align:center;color:var(--brand);font-weight:700;font-size:13.5px;padding-block:12px}
+.appcard{background:#fff;border:1px solid var(--line);border-radius:20px;padding:14px;box-shadow:0 18px 44px rgba(15,23,42,.14)}
+.apphd{display:flex;align-items:center;gap:10px}
+.apphd .av{width:38px;height:38px;border-radius:50%;background:var(--teal-soft);color:var(--brand-dark);display:flex;align-items:center;justify-content:center;font-weight:800}
+.apphd b{display:block;font-size:14.5px}
+.apphd small{display:block;color:var(--muted);font-size:12px}
+.appmsg{margin-top:10px;background:var(--bg-soft);border-radius:12px;padding:9px 11px;font-size:13px;color:var(--ink-2);line-height:1.55}
+.appai{margin-top:10px;border:1px solid #99f6e4;background:var(--teal-soft);border-radius:12px;padding:10px 11px}
+.appai .aihd{font-size:13px;font-weight:700;color:var(--brand-dark)}
+.appai .airow{display:flex;justify-content:space-between;align-items:center;gap:8px;margin-top:7px;font-size:12.5px;color:var(--ink)}
+.appai .add{flex:none;background:var(--brand);color:#fff;font-weight:700;border-radius:8px;padding:3px 10px;font-size:12px}
 </style>
 </head>
 <body>
@@ -109,16 +123,20 @@
         <p style="margin-top:14px"><a href="../line-oa/" style="font-weight:700">看連接教學 →</a></p>
       </div>
       <div class="fig">
-        <div class="chat" role="img" aria-label="客人在 LINE 傳訊息，熟客簿自動歸檔示意">
-          <div class="bar">你的官方帳號</div>
-          <div class="msg bot">你好，上次看的那款玫瑰金手鍊還有貨嗎？想下個月結婚紀念日送老婆 🙏</div>
-          <div class="cardx">
-            <div class="hd">熟客簿・陳先生</div>
-            <div class="bd">
-              已歸到 <b>陳先生</b> 的客戶檔案<br>
-              ✨ AI 找到：想要 <b>玫瑰金手鍊</b>・下個月結婚紀念日
+        <div class="oaflow" role="img" aria-label="客人在 LINE 傳訊息給你的官方帳號，熟客簿自動歸到客戶檔案並由 AI 找出重點">
+          <div class="chat">
+            <div class="bar">客人的 LINE・你的官方帳號</div>
+            <div class="msg me">上次看的那款玫瑰金手鍊還有貨嗎？下個月結婚紀念日想買來送人 🙏</div>
+          </div>
+          <div class="oaarrow">↓ 熟客簿自動歸到客戶檔案</div>
+          <div class="appcard">
+            <div class="apphd"><span class="av">陳</span><span><b>陳先生</b><small>客戶檔案・LINE 訊息</small></span></div>
+            <div class="appmsg">上次看的那款玫瑰金手鍊還有貨嗎？下個月結婚紀念日想買來送人 🙏</div>
+            <div class="appai">
+              <div class="aihd">✨ AI 從 LINE 訊息找到 2 個重點</div>
+              <div class="airow"><span>願望清單：玫瑰金手鍊</span><span class="add">加入</span></div>
+              <div class="airow"><span>提醒：結婚紀念日（下個月）</span><span class="add">加入</span></div>
             </div>
-            <div class="ok">存入願望清單＋設提醒</div>
           </div>
         </div>
       </div>
