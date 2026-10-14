@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+<meta charset="utf-8">
+<link rel="canonical" href="https://hueihetech.com/shukebu/line-oa/">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>連接 LINE 官方帳號｜熟客簿</title>
+<meta name="description" content="五個步驟把你的 LINE 官方帳號連上熟客簿：客人加好友、傳訊息即時通知，自動對應到客人檔案，也能直接用 LINE 傳訊息給客人。">
+<link rel="icon" href="../../assets/favicon.png">
+<link rel="stylesheet" href="../../assets/site.css">
+<meta property="og:title" content="連接 LINE 官方帳號｜熟客簿">
+<meta property="og:description" content="客人的 LINE 訊息自動進熟客簿——五個步驟、約 5 分鐘完成連接。">
+<meta property="og:image" content="../../assets/shukebu-icon.png">
+<style>
+.doc{max-width:760px;margin:0 auto}
+.doc h2{font-size:clamp(21px,3vw,25px);margin-top:8px}
+.doc p.lead{color:var(--ink-2);font-size:15.5px;margin-top:10px}
+.gains{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin-top:22px}
+.gain{background:#fff;border:1px solid var(--line);border-radius:14px;padding:16px 18px}
+.gain b{display:block;font-size:15.5px}
+.gain span{display:block;color:var(--ink-2);font-size:14px;margin-top:4px}
+.need{margin-top:18px;padding-left:0;list-style:none}
+.need li{color:var(--ink-2);font-size:15px;padding-left:26px;position:relative;margin-top:8px}
+.need li::before{content:"✓";position:absolute;left:0;color:var(--brand);font-weight:700}
+.steps{margin-top:26px;display:flex;flex-direction:column;gap:18px;counter-reset:step}
+.step{display:flex;gap:16px;background:#fff;border:1px solid var(--line);border-radius:16px;padding:20px 20px 18px;scroll-margin-top:80px}
+.step .n{flex:none;width:34px;height:34px;border-radius:10px;background:var(--teal-soft);color:var(--brand);display:flex;align-items:center;justify-content:center;font-weight:800}
+.step .body{flex:1;min-width:0}
+.step h3{font-size:17.5px;line-height:1.5}
+.step p,.step li{color:var(--ink-2);font-size:15px;margin-top:6px}
+.step ol{padding-left:20px;margin-top:4px}
+.path{display:inline;background:var(--bg-soft);border:1px solid var(--line);border-radius:6px;padding:1px 7px;font-size:13.5px;color:var(--ink);white-space:normal;word-break:break-word}
+.note{margin-top:10px;background:#fffbeb;border:1px solid #fde68a;border-radius:10px;padding:10px 12px;color:#92400e;font-size:14px}
+.step.key{border-color:#99f6e4;box-shadow:0 0 0 3px var(--teal-soft)}
+.faq{margin-top:22px}
+.faq details{border-bottom:1px solid var(--line);padding-block:14px}
+.faq summary{cursor:pointer;font-weight:700;font-size:15.5px;list-style:none;display:flex;justify-content:space-between;gap:12px}
+.faq summary::after{content:"+";color:var(--brand);font-weight:800}
+.faq details[open] summary::after{content:"−"}
+.faq details p{color:var(--ink-2);font-size:15px;margin-top:8px}
+</style>
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap">
+    <a class="logo" href="../"><img src="../../assets/shukebu-icon.png" alt="熟客簿">熟客簿</a>
+    <nav>
+      <a href="../features/">功能介紹</a>
+      <a class="cta" href="#download">免費試用 14 天</a>
+    </nav>
+  </div>
+</header>
+
+<div class="hero" style="padding-block:60px 44px">
+  <div class="wrap">
+    <h1 style="font-size:clamp(26px,4.4vw,38px)">連接 LINE 官方帳號</h1>
+    <p class="sub">客人的 LINE 訊息，自動進熟客簿。五個步驟，大約 5 分鐘。</p>
+  </div>
+</div>
+
+<section style="padding-block:48px">
+  <div class="wrap doc">
+
+    <h2>連接後可以做什麼</h2>
+    <div class="gains">
+      <div class="gain"><b>即時通知</b><span>客人加好友、傳訊息，手機馬上跳通知</span></div>
+      <div class="gain"><b>自動對應客人</b><span>配對一次，之後的訊息都歸到同一份客戶檔案</span></div>
+      <div class="gain"><b>AI 找重點</b><span>訊息裡提到的喜好、預算、想要的東西，整理好讓你一鍵存入</span></div>
+      <div class="gain"><b>直接用 LINE 回</b><span>AI 擬好的生日祝福、到貨通知，從熟客簿直接傳給客人</span></div>
+    </div>
+
+    <h2 style="margin-top:44px">開始前，你需要</h2>
+    <ul class="need">
+      <li>一個 LINE 官方帳號（免費的輕用量方案也可以），而且你是管理員</li>
+      <li>手機上已安裝熟客簿 App，並登入你的帳號</li>
+      <li>一台電腦：LINE 的後台在電腦上操作比較方便</li>
+    </ul>
+    <p class="lead">只能連接 LINE 官方帳號。你個人 LINE 的好友和聊天，熟客簿讀不到。</p>
+
+    <h2 style="margin-top:44px">五個步驟</h2>
+    <div class="steps">
+
+      <div class="step" id="step1">
+        <div class="n">1</div>
+        <div class="body">
+          <h3>在官方帳號後台啟用 Messaging API</h3>
+          <ol>
+            <li>到 <a href="https://manager.line.biz/" target="_blank" rel="noopener">LINE Official Account Manager</a>，選你的官方帳號</li>
+            <li>點右上角 <span class="path">設定</span>，再點左側 <span class="path">Messaging API</span></li>
+            <li>按 <span class="path">啟用 Messaging API</span>，選擇或建立一個「服務提供者（Provider）」，依畫面同意條款</li>
+          </ol>
+          <div class="note">服務提供者選定後就不能更改。用公司或品牌名稱建立即可。</div>
+        </div>
+      </div>
+
+      <div class="step" id="step2">
+        <div class="n">2</div>
+        <div class="body">
+          <h3>複製 Channel ID 和 Channel secret</h3>
+          <p>啟用後，同一頁就會出現 <span class="path">Channel ID</span> 和 <span class="path">Channel secret</span>，兩個都複製下來。</p>
+          <p>之後要再找，也可以到 <a href="https://developers.line.biz/console/" target="_blank" rel="noopener">LINE Developers Console</a> → 你的 Provider → 你的 channel → <span class="path">Basic settings</span>。</p>
+        </div>
+      </div>
+
+      <div class="step" id="step3">
+        <div class="n">3</div>
+        <div class="body">
+          <h3>發行長期的 Channel access token</h3>
+          <ol>
+            <li>到 <a href="https://developers.line.biz/console/" target="_blank" rel="noopener">LINE Developers Console</a>，用同一個 LINE 帳號登入</li>
+            <li>點你的 Provider → 你的 channel → 上方 <span class="path">Messaging API</span> 分頁</li>
+            <li>捲到最下面的 <span class="path">Channel access token (long-lived)</span>，按 <span class="path">Issue</span>，複製產生的那一長串</li>
+          </ol>
+        </div>
+      </div>
+
+      <div class="step" id="step4">
+        <div class="n">4</div>
+        <div class="body">
+          <h3>在熟客簿貼上，按「驗證並連接」</h3>
+          <p>打開熟客簿 → <span class="path">設定</span> → <span class="path">LINE</span> → <span class="path">LINE 官方帳號</span>，把三組資料貼上，按 <span class="path">驗證並連接</span>。</p>
+          <p>熟客簿會檢查資料是否正確，並自動幫你設好 Webhook 網址，不用自己填。</p>
+        </div>
+      </div>
+
+      <div class="step key" id="webhook">
+        <div class="n">5</div>
+        <div class="body">
+          <h3>打開「Use webhook」（最常漏掉的一步）</h3>
+          <ol>
+            <li>回到 <a href="https://developers.line.biz/console/" target="_blank" rel="noopener">LINE Developers Console</a> → 你的 channel → <span class="path">Messaging API</span> 分頁</li>
+            <li>在 <span class="path">Webhook settings</span> 找到 <span class="path">Use webhook</span>，把開關打開</li>
+            <li>回到熟客簿，按 <span class="path">開好了，重新檢查</span></li>
+          </ol>
+          <div class="note">這個開關沒開，Webhook 網址設好了，LINE 也不會把客人的訊息送過來。熟客簿顯示「還收不到客人訊息」，就是這一步還沒做。</div>
+        </div>
+      </div>
+
+    </div>
+
+    <p class="lead" style="margin-top:22px">完成！之後客人加你好友或傳訊息，就會出現在熟客簿的「待配對」清單。配對到客戶檔案一次，之後的訊息都會自動歸過去。</p>
+
+    <h2 style="margin-top:48px">常見問題</h2>
+    <div class="faq">
+      <details>
+        <summary>圖文選單、歡迎訊息、自動回應還會照常運作嗎？</summary>
+        <p>會。這些都在官方帳號後台設定，連接熟客簿不會改動它們。</p>
+      </details>
+      <details>
+        <summary>我原本有接聊天機器人或其他 CRM，會受影響嗎？</summary>
+        <p>會。一個官方帳號只能設一個 Webhook 網址，連接後會改成熟客簿的網址，原本的服務就收不到客人訊息了。若你還需要原本的服務，請先確認再連接。</p>
+      </details>
+      <details>
+        <summary>從熟客簿傳訊息給客人要錢嗎？</summary>
+        <p>熟客簿不另外收費，但主動傳出的訊息會用到你官方帳號方案的每月訊息則數。熟客簿裡會顯示本月剩下的額度，方案與則數依 LINE 官方帳號的規定。</p>
+      </details>
+      <details>
+        <summary>客人的資料安全嗎？</summary>
+        <p>Channel secret 和 access token 都加密保存。客人訊息的原文依你設定的天數（30 到 365 天）自動刪除；AI 整理出的重點存入客戶檔案後會一直保留。</p>
+      </details>
+      <details>
+        <summary>之前就加好友的客人，也會出現嗎？</summary>
+        <p>已認證或 Premium 的官方帳號，可以在熟客簿按「匯入好友」一次帶進來；一般帳號則是在客人下一次傳訊息時自動出現。</p>
+      </details>
+      <details>
+        <summary>想取消連接怎麼做？</summary>
+        <p>在熟客簿的 LINE 官方帳號頁按「中斷連接」。中斷後不會再收到客人訊息，已配對的紀錄也會一併移除。若之後要改接其他服務，記得到 LINE Developers Console 把 Webhook 網址換掉。</p>
+      </details>
+    </div>
+
+    <p class="lead" style="margin-top:28px">卡在哪一步？寫信給我們：<a href="mailto:support@hueihetech.com">support@hueihetech.com</a></p>
+  </div>
+</section>
+
+<section class="alt">
+  <div class="wrap" style="text-align:center">
+    <h2 class="sec">還沒有熟客簿？</h2>
+    <div class="badges" id="download" style="justify-content:center;margin-top:28px">
+      <a class="badge-btn" href="https://apps.apple.com/tw/app/id6811958084" target="_blank" rel="noopener">
+        <span><small>Download on the</small>App Store</span>
+      </a>
+      <a class="badge-btn" href="https://play.google.com/store/apps/details?id=com.hueihetech.veloce" target="_blank" rel="noopener">
+        <span><small>GET IT ON</small>Google Play</span>
+      </a>
+    </div>
+    <p style="color:var(--muted);font-size:13.5px;margin-top:14px">免費試用 14 天・不用綁信用卡</p>
+  </div>
+</section>
+
+<footer class="site">
+  <div class="wrap">
+    <div class="cols">
+      <div>
+        <div class="brandline"><img src="../../assets/shukebu-icon.png" alt="">熟客簿</div>
+        <p style="margin-top:10px">by 暉和智慧科技有限公司</p>
+        <p><a href="mailto:support@hueihetech.com">support@hueihetech.com</a></p>
+      </div>
+      <div>
+        <p><a href="../../">公司首頁</a></p>
+        <p><a href="../">產品首頁</a></p>
+        <p><a href="../features/">功能介紹</a></p>
+        <p><a href="../../legal/privacy.html">隱私權政策</a></p>
+        <p><a href="../../legal/terms.html">服務條款</a></p>
+      </div>
+    </div>
+    <p class="fine">© 2026 暉和智慧科技有限公司 All rights reserved.</p>
+  </div>
+</footer>
+
+</body>
+</html>
