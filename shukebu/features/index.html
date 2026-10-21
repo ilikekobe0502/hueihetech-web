@@ -5,11 +5,11 @@
 <link rel="canonical" href="https://hueihetech.com/shukebu/features/">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>功能介紹｜熟客簿——銷售顧問的 AI 客戶管家</title>
-<meta name="description" content="熟客簿功能總覽：LINE 速記、LINE 官方帳號串接、語音速記、智慧提醒與行事曆、AI 擬訊、貨找人、業績追蹤。30 秒講完，客人的一切幫你記住。">
+<meta name="description" content="熟客簿功能總覽：語音速記、LINE 速記、智慧提醒與行事曆、貨找人、LINE 官方帳號串接、AI 擬訊、業績追蹤。講 30 秒或傳個 LINE 就記好客人，時間到提醒你，新貨一到幫你找出該通知誰。">
 <link rel="icon" href="../../assets/favicon.png">
 <link rel="stylesheet" href="../../assets/site.css">
 <meta property="og:title" content="功能介紹｜熟客簿">
-<meta property="og:description" content="LINE 速記、語音速記、智慧提醒、AI 擬訊、貨找人——銷售顧問的 AI 客戶管家。">
+<meta property="og:description" content="語音速記、LINE 速記、智慧提醒、貨找人——記 → 醒 → 動，銷售顧問的 AI 客戶管家。">
 <meta property="og:image" content="../../assets/shukebu-icon.png">
 <style>
 .feat{display:flex;gap:44px;align-items:flex-start;flex-wrap:wrap;margin-top:40px}
@@ -67,17 +67,34 @@
 <div class="hero" style="padding-block:64px 48px">
   <div class="wrap">
     <h1 style="font-size:clamp(26px,4.4vw,38px)">熟客簿能幫你做什麼？</h1>
-    <p class="sub">從「記下來」到「行動」，一條龍的熟客經營動線</p>
+    <p class="sub">記 → 醒 → 動：講 30 秒或傳個 LINE 就記好，時間到提醒你，新貨一到幫你找出該通知的客人</p>
   </div>
 </div>
 
 <section style="padding-block:56px">
   <div class="wrap">
 
+    <!-- 語音速記 -->
+    <div class="feat" id="voice">
+      <div class="txt">
+        <div class="tagline">記・還在用 Excel、筆記本記客人？</div>
+        <h3>語音速記</h3>
+        <p>接待完客人，在 App 裡按住就講，30 秒講完一位客人。AI 自動抽出<b>偏好、預算、願望清單、待辦</b>，分門別類放進客戶檔案——不用打一個字。</p>
+        <ul>
+          <li>「林太太喜歡 36mm 的錶、預算 50 萬、女兒 12 月結婚要包套」→ 一句話，四筆資料各就各位</li>
+          <li>聽不清楚、環境音太吵會請你重錄，不會寫進錯的內容</li>
+          <li>行業標籤可自訂：珠寶、保險、房仲、美業……各有一套語言</li>
+        </ul>
+      </div>
+      <div class="fig"><img src="../../assets/phone-voice.png" alt="語音速記畫面" style="width:min(260px,70vw);border-radius:20px;box-shadow:0 18px 44px rgba(15,23,42,.18)" loading="lazy"></div>
+    </div>
+
+    <hr class="divider">
+
     <!-- LINE 速記 -->
     <div class="feat" id="line">
       <div class="txt">
-        <div class="tagline">記</div>
+        <div class="tagline">記・懶得開 App？傳 LINE 就記好</div>
         <h3>LINE 速記<span class="newbadge">NEW</span></h3>
         <p>忙到連 App 都懶得開？加「熟客簿」官方帳號好友，<b>直接在 LINE 裡傳語音或打字</b>，AI 自動整理成客戶檔案。</p>
         <ul>
@@ -103,6 +120,41 @@
           <div class="msg bot">✅ 已寫入客戶檔案，提醒也設好了 ⏰</div>
         </div>
       </div>
+    </div>
+
+    <hr class="divider">
+
+    <!-- 智慧提醒＋行事曆 -->
+    <div class="feat" id="remind">
+      <div class="txt">
+        <div class="tagline">醒・客人生日又忘了？</div>
+        <h3>智慧提醒 × 行事曆<span class="newbadge">行事曆 NEW</span></h3>
+        <p>生日、紀念日、回訪、保養到期——時間到自動提醒你。新的<b>行事曆視圖</b>把提醒、壽星、成交全放在同一個月曆上，一眼掌握。</p>
+        <ul>
+          <li>填一次生日，每年自動提醒；提醒跳出時，<a href="#draft">AI 一鍵寫好問候訊息</a></li>
+          <li>太久沒聯絡的客人，自動列進「需要關注」叫你去喚醒</li>
+          <li>月曆上藍點是提醒、琥珀點是生日、綠點是成交，逾期變紅</li>
+        </ul>
+      </div>
+      <div class="fig"><img src="../../assets/phone-calendar.png" alt="行事曆視圖畫面" style="width:min(260px,70vw);border-radius:20px;box-shadow:0 18px 44px rgba(15,23,42,.18)" loading="lazy"></div>
+    </div>
+
+    <hr class="divider">
+
+    <!-- 貨找人 -->
+    <div class="feat" id="match">
+      <div class="txt">
+        <div class="tagline">動・新貨到了，該通知誰？</div>
+        <h3>貨找人</h3>
+        <p>新貨一到，選品項類別、預算，或<b>直接拍張商品照</b>讓 AI 帶入條件，熟客簿就從所有客人裡找出潛在買家，依契合度排好——不用再靠記憶翻名單。</p>
+        <ul>
+          <li><b>正在找</b>：願望清單裡就有這樣東西的客人，最先通知</li>
+          <li><b>回購潛力</b>：買過同類商品、可能再買的客人</li>
+          <li><b>偏好吻合</b>：材質、款式、預算對得上的客人</li>
+          <li>每位都附上契合度與原因，點一下「AI 擬訊」就能寫好到貨通知</li>
+        </ul>
+      </div>
+      <div class="fig"><img src="../../assets/phone-match.png" alt="貨找人畫面：依契合度列出正在找、可能回購的潛在買家" style="width:min(260px,70vw);border-radius:20px;box-shadow:0 18px 44px rgba(15,23,42,.18)" loading="lazy"></div>
     </div>
 
     <hr class="divider">
@@ -144,46 +196,12 @@
 
     <hr class="divider">
 
-    <!-- 語音速記 -->
-    <div class="feat" id="voice">
-      <div class="txt">
-        <div class="tagline">記</div>
-        <h3>語音速記</h3>
-        <p>在 App 裡按住就講，30 秒講完一位客人。AI 自動抽出<b>偏好、預算、願望清單、待辦</b>，分門別類放進客戶檔案——不用打一個字。</p>
-        <ul>
-          <li>「林太太喜歡 36mm 的錶、預算 50 萬、女兒 12 月結婚要包套」→ 一句話，四筆資料各就各位</li>
-          <li>聽不清楚、環境音太吵會請你重錄，不會寫進錯的內容</li>
-          <li>行業標籤可自訂：珠寶、保險、房仲、美業……各有一套語言</li>
-        </ul>
-      </div>
-      <div class="fig"><img src="../../assets/phone-voice.png" alt="語音速記畫面" style="width:min(260px,70vw);border-radius:20px;box-shadow:0 18px 44px rgba(15,23,42,.18)" loading="lazy"></div>
-    </div>
-
-    <hr class="divider">
-
-    <!-- 智慧提醒＋行事曆 -->
-    <div class="feat" id="remind">
-      <div class="txt">
-        <div class="tagline">醒</div>
-        <h3>智慧提醒 × 行事曆<span class="newbadge">行事曆 NEW</span></h3>
-        <p>生日、紀念日、回訪、保養到期——時間到自動提醒你。新的<b>行事曆視圖</b>把提醒、壽星、成交全放在同一個月曆上，一眼掌握。</p>
-        <ul>
-          <li>填一次生日，每年自動提醒，還能一鍵生成祝賀訊息</li>
-          <li>太久沒聯絡的客人，自動列進「需要關注」叫你去喚醒</li>
-          <li>月曆上藍點是提醒、琥珀點是生日、綠點是成交，逾期變紅</li>
-        </ul>
-      </div>
-      <div class="fig"><img src="../../assets/phone-calendar.png" alt="行事曆視圖畫面" style="width:min(260px,70vw);border-radius:20px;box-shadow:0 18px 44px rgba(15,23,42,.18)" loading="lazy"></div>
-    </div>
-
-    <hr class="divider">
-
     <!-- AI 擬訊 -->
     <div class="feat" id="draft">
       <div class="txt">
-        <div class="tagline">動</div>
+        <div class="tagline">提醒與貨找人的好幫手</div>
         <h3>AI 擬訊</h3>
-        <p>該聯絡了，但第一句怎麼開口？AI 認識你的客人——依<b>偏好、最近互動、場合</b>生成三種語氣的訊息草稿，挑一個複製貼到 LINE 就能傳。</p>
+        <p>提醒跳出、新貨要通知客人，但第一句怎麼開口？在提醒或貨找人結果上點一下，AI 依客人的<b>偏好、最近互動、購買紀錄</b>寫好三則訊息草稿，挑一則複製到 LINE 就能傳。</p>
         <ul>
           <li>生日祝賀、新品通知、離店關懷、久未回訪，各有合適的口吻</li>
           <li>貼心但不油膩：會提到她在意的事，不會像罐頭群發</li>
@@ -197,11 +215,6 @@
     <!-- 其他功能 cards -->
     <h2 class="sec" style="margin-top:8px">還有這些，每天都用得上</h2>
     <div class="cards">
-      <div class="card">
-        <div class="num">✦</div>
-        <h3>貨找人</h3>
-        <p>新品到貨拍張照，AI 自動比對哪些客人在找這樣的商品，附上匹配原因——不再靠記憶翻名單。</p>
-      </div>
       <div class="card">
         <div class="num">✦</div>
         <h3>業績與成交</h3>
