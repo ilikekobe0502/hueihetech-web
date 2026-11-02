@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<link rel="canonical" href="https://hueihetech.com/ja/veloce/guide/excel-customer-ledger/">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>エクセルの顧客台帳からアプリへ移行する手順｜必要な項目と整理のコツ | Veloce</title>
+<meta name="description" content="エクセルの顧客台帳が使いにくくなってきた販売スタッフ・営業担当へ。顧客台帳に入れておきたい項目、移行前のデータ整理、顧客管理アプリへ移す手順と、移行後に定着させるコツを解説します。">
+<link rel="icon" href="../../../../assets/favicon.png">
+<link rel="stylesheet" href="../../../../assets/site.css">
+<meta property="og:type" content="article">
+<meta property="og:title" content="エクセルの顧客台帳からアプリへ移行する手順｜必要な項目と整理のコツ | Veloce">
+<meta property="og:description" content="エクセルの顧客台帳が使いにくくなってきた販売スタッフ・営業担当へ。顧客台帳に入れておきたい項目、移行前のデータ整理、顧客管理アプリへ移す手順と、移行後に定着させるコツを解説します。">
+<meta property="og:image" content="https://hueihetech.com/assets/shukebu-icon.png">
+<meta property="og:url" content="https://hueihetech.com/ja/veloce/guide/excel-customer-ledger/">
+<style>
+.guide{max-width:760px;margin:0 auto;padding-block:48px 64px}
+.guide .crumb,.guide-list .crumb{font-size:13px;color:var(--muted)}
+.guide h1{font-size:clamp(26px,4.2vw,34px);line-height:1.4;margin-top:10px;text-wrap:balance}
+.guide .meta{font-size:13px;color:var(--muted);margin-top:8px}
+.guide .answer{background:var(--teal-soft);border-radius:14px;padding:18px 20px;margin-top:24px;font-size:16.5px;color:var(--ink)}
+.guide h2{font-size:22px;margin-top:40px;line-height:1.45}
+.guide h3{font-size:18px;margin-top:26px}
+.guide p,.guide li{font-size:16px;color:var(--ink-2);margin-top:12px}
+.guide ul,.guide ol{padding-left:1.4em}
+.guide table{border-collapse:collapse;margin-top:16px;font-size:15px;width:100%}
+.guide th,.guide td{border:1px solid var(--line);padding:10px 12px;text-align:left;vertical-align:top}
+.guide th{background:var(--bg-soft)}
+.guide .tablewrap{overflow-x:auto}
+.guide .faq dt{font-weight:700;color:var(--ink);margin-top:20px}
+.guide .faq dd{color:var(--ink-2);margin-top:6px}
+.cta-box{border:1px solid var(--line);border-radius:18px;padding:24px;margin-top:44px;text-align:center}
+.cta-box .actions{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-top:16px}
+.guide .related a{display:block;margin-top:8px}
+.guide-list{max-width:760px;margin:0 auto;padding-block:48px 64px}
+.guide-list h1{font-size:clamp(26px,4.2vw,34px);margin-top:10px}
+.guide-list a.item{display:block;border:1px solid var(--line);border-radius:16px;padding:20px 22px;margin-top:16px;color:var(--ink)}
+.guide-list a.item:hover{border-color:var(--brand)}
+.guide-list a.item p{color:var(--muted);font-size:15px;margin-top:6px}
+.langs a{margin-right:12px}
+</style>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "エクセルの顧客台帳からアプリへ移行する手順｜必要な項目と整理のコツ", "description": "エクセルの顧客台帳が使いにくくなってきた販売スタッフ・営業担当へ。顧客台帳に入れておきたい項目、移行前のデータ整理、顧客管理アプリへ移す手順と、移行後に定着させるコツを解説します。", "datePublished": "2026-11-02", "dateModified": "2026-11-02", "inLanguage": "ja", "mainEntityOfPage": "https://hueihetech.com/ja/veloce/guide/excel-customer-ledger/", "author": {"@type": "Organization", "name": "Hueihe Tech", "url": "https://hueihetech.com"}, "publisher": {"@type": "Organization", "name": "Hueihe Tech", "url": "https://hueihetech.com", "logo": {"@type": "ImageObject", "url": "https://hueihetech.com/assets/shukebu-icon.png"}}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "顧客台帳には最低限どの項目が必要ですか？", "acceptedAnswer": {"@type": "Answer", "text": "氏名と連絡先に加えて、「好み」「購入履歴」「誕生日などの大切な日」「次に連絡する日と用件」の4つがあると、フォローや提案に使える台帳になります。"}}, {"@type": "Question", "name": "エクセルの顧客台帳は無料テンプレートでも十分ですか？", "acceptedAnswer": {"@type": "Answer", "text": "顧客が少ないうちは十分です。ただ、テンプレートはリマインダーの機能を持たないため、誕生日やフォローの時期を自分で確認する手間が残ります。"}}, {"@type": "Question", "name": "全員分を一度にアプリへ移す必要はありますか？", "acceptedAnswer": {"@type": "Answer", "text": "ありません。連絡する可能性が高いお客様から移し、残りは次に接客したときに登録していく方法が、負担が少なく続けやすいです。"}}, {"@type": "Question", "name": "顧客情報をスマホで管理しても大丈夫ですか？", "acceptedAnswer": {"@type": "Answer", "text": "Veloceはデータを暗号化して保存し、生体認証ロックにも対応しています。あわせて、個人情報保護法や勤務先の規程に従い、お客様の同意を得たうえで記録・利用してください。"}}, {"@type": "Question", "name": "移行の前に試せますか？", "acceptedAnswer": {"@type": "Answer", "text": "Veloceには14日間の無料トライアルがあり、クレジットカードの登録は不要です。まず数名のお客様で試してから、本格的に移すかを決められます。"}}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Veloce", "item": "https://hueihetech.com/ja/veloce/"}, {"@type": "ListItem", "position": 2, "name": "顧客管理ガイド", "item": "https://hueihetech.com/ja/veloce/guide/"}, {"@type": "ListItem", "position": 3, "name": "エクセルの顧客台帳からアプリへ移行する手順｜必要な項目と整理のコツ", "item": "https://hueihetech.com/ja/veloce/guide/excel-customer-ledger/"}]}</script>
+</head>
+<body>
+<header class="site">
+  <div class="wrap">
+    <a class="logo" href="../../../../ja/veloce/"><img src="../../../../assets/shukebu-icon.png" alt="Veloce">Veloce</a>
+    <nav>
+      <a href="../../../../ja/veloce/guide/">顧客管理ガイド</a>
+      <a class="cta" href="../../../../ja/veloce/#download">14日間無料で試す</a>
+    </nav>
+  </div>
+</header>
+<main class="guide wrap">
+  <p class="crumb"><a href="../../../../ja/veloce/">Veloce</a> › <a href="../">顧客管理ガイド</a></p>
+  <h1>エクセルの顧客台帳からアプリへ移行する手順｜必要な項目と整理のコツ</h1>
+  <p class="meta">更新: 2026-11-02 · Hueihe Tech</p>
+  <p class="answer">エクセルの顧客台帳からアプリへ移すときは、①今の台帳の項目を「基本情報・好み・購入履歴・大切な日・次の連絡」に整理し、②重複や古い情報を片付け、③まずは連絡頻度の高い上位のお客様から移す、という順番がおすすめです。全員を一度に移そうとせず、接客のたびに記録を足していくほうが定着します。</p>
+  
+<h2>エクセルの顧客台帳が限界になるサイン</h2>
+<ul>
+<li>店頭や外出先で、スマホからすぐに入力・確認できない。</li>
+<li>誕生日やフォローの時期を、台帳を開いて自分で探さないとわからない。</li>
+<li>「このブランドを探しているお客様は誰だったか」をすぐに思い出せない。</li>
+<li>備考欄に何でも書いてしまい、あとから読み返しても要点がわからない。</li>
+<li>ファイルが複数できて、どれが最新かわからなくなっている。</li>
+</ul>
+<p>どれかに当てはまるなら、台帳の中身はそのままに、使う道具を見直すタイミングです。</p>
+
+<h2>顧客台帳に入れておきたい項目</h2>
+<div class="tablewrap"><table>
+<tr><th>分類</th><th>項目の例</th><th>使いどころ</th></tr>
+<tr><td>基本情報</td><td>氏名、連絡先（電話・LINE）、ランク（VVIP／VIP／一般／見込み）</td><td>誰に優先して連絡するかを決める</td></tr>
+<tr><td>好み・特徴</td><td>好きな素材や色、サイズ、好きなブランド、苦手なもの</td><td>商品の提案やメッセージの話題に使う</td></tr>
+<tr><td>ウィッシュリスト・予算</td><td>探している商品、予算の目安</td><td>新入荷のときに声をかける相手を見つける</td></tr>
+<tr><td>購入履歴・見積もり</td><td>購入日、商品、金額、未成約の見積もりと有効期限</td><td>再購入やメンテナンスの提案、見積もりのフォロー</td></tr>
+<tr><td>大切な日</td><td>誕生日、結婚記念日など</td><td>毎年のお祝いの連絡</td></tr>
+<tr><td>接客履歴・次の連絡</td><td>前回話したこと、次に連絡する日と用件</td><td>会話の続きから自然に連絡する</td></tr>
+</table></div>
+
+<h2>移行の手順</h2>
+<ol>
+<li><b>台帳を整理する：</b>重複している行をまとめ、連絡がつかなくなったお客様や古い情報を整理します。備考欄の長いメモは、上の表の分類に分けておくと移しやすくなります。</li>
+<li><b>移す順番を決める：</b>全員を一度に移す必要はありません。ここ1年で購入があったお客様、VIP以上のお客様、見積もり中のお客様など、連絡する可能性が高い順に移します。</li>
+<li><b>大切な日とリマインダーを先に入れる：</b>誕生日・記念日、見積もりの期限、メンテナンス時期を最初に登録しておくと、移行した直後からアプリが役に立ちます。</li>
+<li><b>残りは接客のたびに足す：</b>あまり来店のないお客様は、次に接客したときや連絡したときに登録すれば十分です。</li>
+<li><b>エクセルは保管だけにする：</b>移行が済んだら、台帳は過去の記録として保管し、新しい情報はアプリにだけ書くと決めておきます。二重管理が一番続きません。</li>
+</ol>
+
+<h2>移行後に続けるコツ</h2>
+<p>アプリに移しても、記録の手間が大きいとまた続かなくなります。Veloceでは、接客のあとに約30秒話すだけで、AIが好み・ウィッシュリスト・予算・フォローのリマインダーに整理してくれます（保存前に確認・修正できます）。LINE クイックメモを使えば、LINEでメッセージや音声を送るだけで顧客メモに追加できます。</p>
+<p>業種テンプレート（ジュエリー・時計・ブランドバッグ・ファッション・自動車・不動産・法人営業・汎用）を選ぶと、タグやリマインダーの種類があらかじめ用意されるので、台帳の項目をゼロから考え直す必要もありません。</p>
+
+  <h2>よくある質問</h2>
+  <dl class="faq"><dt>顧客台帳には最低限どの項目が必要ですか？</dt><dd>氏名と連絡先に加えて、「好み」「購入履歴」「誕生日などの大切な日」「次に連絡する日と用件」の4つがあると、フォローや提案に使える台帳になります。</dd><dt>エクセルの顧客台帳は無料テンプレートでも十分ですか？</dt><dd>顧客が少ないうちは十分です。ただ、テンプレートはリマインダーの機能を持たないため、誕生日やフォローの時期を自分で確認する手間が残ります。</dd><dt>全員分を一度にアプリへ移す必要はありますか？</dt><dd>ありません。連絡する可能性が高いお客様から移し、残りは次に接客したときに登録していく方法が、負担が少なく続けやすいです。</dd><dt>顧客情報をスマホで管理しても大丈夫ですか？</dt><dd>Veloceはデータを暗号化して保存し、生体認証ロックにも対応しています。あわせて、個人情報保護法や勤務先の規程に従い、お客様の同意を得たうえで記録・利用してください。</dd><dt>移行の前に試せますか？</dt><dd>Veloceには14日間の無料トライアルがあり、クレジットカードの登録は不要です。まず数名のお客様で試してから、本格的に移すかを決められます。</dd></dl>
+  <div class="cta-box">
+  <h3 style="margin-top:0">まずは試してみませんか？</h3>
+  <p>Veloceは販売スタッフのための顧客管理アプリです。接客のあとに30秒話すだけで記録、誕生日やフォローを自動でお知らせ、新入荷のときに連絡すべきお客様もわかります。14日間無料、クレジットカード登録は不要です。</p>
+  <div class="actions">
+    <a class="btn primary" href="https://apps.apple.com/jp/app/id6811958084" target="_blank" rel="noopener">App Storeでダウンロード</a>
+    <a class="btn primary" href="https://play.google.com/store/apps/details?id=com.hueihetech.veloce&hl=ja" target="_blank" rel="noopener">Google Playで手に入れよう</a>
+  </div>
+</div>
+  <h2>関連ガイド</h2>
+  <div class="related"><a href="../customer-management-app/">個人で使える顧客管理アプリ・CRMの選び方｜販売スタッフ・営業担当向け</a><a href="../line-customer-management/">LINEで顧客管理するときの課題と解決法｜販売スタッフ・営業担当向け</a><a href="../follow-up-reminders/">お客様の誕生日・記念日・フォロー連絡を忘れない方法｜ランク別の連絡頻度と文面のコツ</a></div>
+</main>
+<footer class="site">
+  <div class="wrap">
+    <div class="cols">
+      <div>
+        <div class="brandline"><img src="../../../../assets/shukebu-icon.png" alt="">Veloce</div>
+        <p style="margin-top:10px">by Hueihe Tech</p>
+        <p><a href="mailto:support@hueihetech.com">support@hueihetech.com</a></p>
+      </div>
+      <div>
+        <p><a href="../../../../ja/veloce/">Veloce</a></p>
+        <p><a href="../../../../ja/veloce/guide/">顧客管理ガイド</a></p>
+        <p><a href="../../../../legal/ja/privacy.html">プライバシーポリシー</a></p>
+        <p><a href="../../../../legal/ja/terms.html">利用規約</a></p>
+        <p class="langs">言語：<a href="../../../../shukebu/">中文</a><a href="../../../../en/veloce/">English</a><a href="../../../../ko/veloce/">한국어</a></p>
+      </div>
+    </div>
+    <p class="fine">© 2026 Hueihe Tech</p>
+  </div>
+</footer>
+</body>
+</html>

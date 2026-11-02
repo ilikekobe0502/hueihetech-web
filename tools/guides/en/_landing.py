@@ -1,0 +1,26 @@
+LANDING = {
+    'title': 'Veloce: Clienteling CRM App for Retail & Sales Reps',
+    'description': "Veloce is a clienteling CRM app for front-line sales. Log clients by voice, get birthday and follow-up reminders, and find buyers for new stock.",
+    'eyebrow': 'Client book app for front-line sales',
+    'h1': 'Remember every client.<br>Never miss a follow-up.',
+    'sub': "Talk for 30 seconds after a visit and Veloce turns it into a client profile, a wishlist and reminders. When new stock arrives, it shows you who to call and drafts the message.",
+    'trial_note': 'Free 14-day trial, no credit card required. iOS and Android.',
+    'features_title': 'Built for the sales floor, not the back office',
+    'features_sub': 'Everything you need to keep regular clients coming back, on your phone.',
+    'cards': [
+        ('Voice Notes', 'Talk for about 30 seconds after a visit. AI turns it into preferences, wishlist items, budget and follow-up reminders. You review everything before saving.'),
+        ('Smart reminders', 'Birthdays and anniversaries every year, check-ins, service due dates, quote follow-ups before they expire, and clients you have not contacted in a while. All in a calendar view.'),
+        ('Find Buyers', 'Pick a category or snap a photo of a product. See which clients are looking for it, who is likely to buy again and whose taste matches, with the reasons.'),
+        ('AI Messages', 'Drafts for new arrivals, birthdays, thank-you notes, quote follow-ups, check-ins and event invites. Three tones, three versions. Open WhatsApp with one tap, or copy and share to any app.'),
+        ('One page per client', 'Preferences, sizes, wishlist, purchases, quotes, notes and key dates in one place. Track monthly targets and sales by category too.'),
+        ('Your data stays yours', 'Encrypted storage and biometric lock. Your account is personal, so your client book stays with you if you change employer. Templates for jewelry, watches, luxury bags, fashion, cars, real estate and B2B.'),
+    ],
+    'screens_title': 'See it in action',
+    'shots': [
+        ('voice', 'Voice Notes screen: tap to record and AI files the note into the client profile'),
+        ('home', "Home screen with this month's sales target and upcoming reminders"),
+        ('match', 'Find Buyers results: clients matched to an emerald necklace, with the reasons'),
+        ('clients', 'Client profile with budget, key dates, preferences and reminders'),
+        ('draft', 'AI Message: birthday wishes draft with tone options and three versions'),
+    ],
+}
