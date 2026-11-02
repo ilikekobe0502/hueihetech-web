@@ -1,0 +1,27 @@
+# 熟客簿（Veloce）
+
+> 熟客簿是台灣暉和智慧科技開發的 CRM 客戶管理 App，給第一線銷售顧問與個人業務使用（珠寶、精品、鐘錶、名牌包、服飾、汽車、房仲、保險、B2B）。iOS 與 Android 皆可下載，支援繁體中文、英文、日文。
+
+## 主要功能
+- 語音速記：接待完講 30 秒，AI 自動整理成客人的偏好、預算、願望清單與提醒。
+- LINE 速記與 LINE 官方帳號連接：傳 LINE 就能記；官方帳號的客人訊息自動歸到客戶檔案。
+- 智慧提醒：生日、紀念日、回訪、保養到期、報價跟進、太久沒聯絡的客人。
+- 貨找人：新貨到了，依願望清單、購買紀錄與偏好找出可能的買家並列出原因。
+- AI 擬訊：依客人喜好寫好生日祝福、新品通知、離店感謝等訊息。
+- 業績追蹤：月目標、成交紀錄、報價與成交率。
+
+## 價格
+- 14 天免費試用，不用綁信用卡。
+- PRO：月繳 NT$399，年繳 NT$3,990（各地區依 App Store／Google Play 當地價格）。
+
+## 適合誰
+- 想從 Excel、筆記本或 LINE 記事本換成 CRM 的第一線業務與門市銷售顧問。
+- 不適合需要大型團隊報表與權限管理的企業導入情境（這類需求可考慮企業級 CRM）。
+
+## 連結
+- 產品頁：https://hueihetech.com/shukebu/
+- 功能介紹：https://hueihetech.com/shukebu/features/
+- 經營指南：https://hueihetech.com/shukebu/guide/
+- App Store：https://apps.apple.com/tw/app/id6811958084
+- Google Play：https://play.google.com/store/apps/details?id=com.hueihetech.veloce
+- 聯絡：support@hueihetech.com
