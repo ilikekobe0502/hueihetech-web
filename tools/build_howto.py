@@ -82,11 +82,11 @@ def build():
     body = f"""<main class="guide-list wrap">
   <p class="crumb"><a href="../">熟客簿</a> › 使用教學</p>
   <h1>熟客簿使用教學</h1>
-  <p style="color:var(--ink-2);margin-top:10px">每個功能用一個真實情境帶你走一遍：接待完怎麼記、什麼時候會提醒你、新貨到了怎麼找客人、訊息怎麼寫。</p>
+  <p style="color:var(--ink-2);margin-top:10px">每個功能用一個真實情境帶你走一遍：接待完怎麼記、什麼時候會提醒你、新貨到了怎麼找客人、舊資料怎麼匯入。</p>
   {lst}
 </main>"""
     jsonld = [{'@context': 'https://schema.org', '@type': 'CollectionPage', 'name': '熟客簿使用教學', 'url': f'{G.SITE}/{BASE}', 'inLanguage': 'zh-Hant-TW'}]
-    paths.append(G.write(BASE, G.page(LANG, BASE, '熟客簿使用教學｜語音速記、提醒、貨找人、AI 擬訊', '熟客簿功能教學：語音速記、生日與回訪提醒、貨找人、AI 擬訊、LINE 速記、報價與成交，每個功能都有情境與分步驟說明。', body, jsonld, None, 'website')))
+    paths.append(G.write(BASE, G.page(LANG, BASE, '熟客簿使用教學｜語音速記、提醒、貨找人、匯入', '熟客簿功能教學：語音速記、生日與回訪提醒、貨找人、LINE 速記、報價與成交、匯入舊資料，每個功能都有情境與分步驟說明。', body, jsonld, None, 'website')))
     G.update_sitemap(paths)
     print('howto pages', len(paths))
 

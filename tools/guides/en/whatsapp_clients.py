@@ -46,12 +46,12 @@ GUIDE = {
 </ul>
 
 <h2>Using Veloce alongside WhatsApp</h2>
-<p>Veloce keeps the client record so WhatsApp can stay a conversation. After a chat or visit, record a 30-second Voice Note and AI files it into the client's preferences, wishlist, budget and reminders for you to review. Reminders bring up birthdays, quote follow-ups and clients you have not contacted for a set number of days. When it is time to reach out, AI Messages drafts a personal message in three versions, and tapping send opens WhatsApp with the client's number and the text already filled in. If a client prefers another app, you can copy the text or share it anywhere.</p>
+<p>Veloce keeps the client record so WhatsApp can stay a conversation. After a chat or visit, record a 30-second Voice Note and AI files it into the client's preferences, wishlist, budget and reminders for you to review. Reminders bring up birthdays, quote follow-ups and clients you have not contacted for a set number of days. When it is time to reach out, open the client profile to see their preferences, wishlist and past purchases, then write to them on WhatsApp with something specific to them. Each profile can store the client's WhatsApp number and the messaging apps they use.</p>
 ''',
     'faq': [
         ('Can I use WhatsApp as a CRM?', 'You can talk to clients on WhatsApp, but a chat list is not a good client record. It does not remind you of follow-ups, it is hard to search by product or date, and details get buried. Most reps pair WhatsApp with a separate client book or CRM.'),
         ('How do I keep track of clients I message on WhatsApp?', 'Give each client one profile with their number, and after each chat move the key facts there: preferences, wishlist, sizes, budget and dates. Add a dated reminder for the next step and work from your reminder list each day.'),
-        ('Does Veloce work with WhatsApp?', "Yes. When you send an AI Message draft, Veloce opens WhatsApp with the client's number and the text filled in, so you just review and send. You can also copy the text or share it to any other app."),
+        ('Does Veloce work with WhatsApp?', "Veloce does not send messages for you. It keeps the client record and reminds you when to reach out, and each profile can store the client's WhatsApp number and the messaging apps they use. You write and send the message yourself in WhatsApp."),
         ('What happens to my client notes if I change phones?', 'Notes kept only inside chat history can be lost with a phone change or a cleared chat. Keeping them in a client app with an account means the record is not tied to one chat thread.'),
     ],
 }

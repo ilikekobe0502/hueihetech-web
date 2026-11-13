@@ -44,13 +44,12 @@ GUIDE = {
 </table></div>
 
 <h2>Making it a habit with Veloce</h2>
-<p>In Veloce, birthdays and anniversaries are set as yearly reminders when you add them. Quotes carry a validity date with a follow-up reminder, and each client can have a "no contact for N days" setting that flags them when they go quiet. Check-ins and service dates show up too, and a calendar view shows what is coming. When a reminder comes up, AI Messages drafts a message based on that client's preferences and recent visits, in three tones and three versions. Pick one, edit if you like, and send it through WhatsApp or copy it to any app.</p>
+<p>In Veloce, birthdays and anniversaries are set as yearly reminders when you add them. Quotes carry a validity date with a follow-up reminder, and each client can have a "no contact for N days" setting that flags them when they go quiet. Check-ins and service dates show up too, and a calendar view shows what is coming. When a reminder comes up, open the client profile to see their preferences, wishlist, past purchases and recent visits, then reach out on WhatsApp or by phone with something that is about them, not a generic greeting.</p>
 ''',
     'faq': [
         ('How often should a sales associate contact clients?', 'A common approach is by tier: every 2 to 4 weeks for top clients, monthly for regulars, quarterly for others, and within a week of a first visit for new prospects. Adjust to your trade and to what each client prefers.'),
         ('How do I remember client birthdays?', 'Save the date in your client app as a yearly reminder, and ideally get notified a few days early so you have time to prepare a message or gift. In Veloce, birthdays and anniversaries repeat every year automatically.'),
         ('When should I follow up on a quote?', 'A few days after sending it to check for questions, and again before the quote expires. Keep the tone helpful rather than pushy.'),
         ('What should I do about clients who have gone quiet?', 'Set a "no contact for N days" reminder so they come up before the relationship cools, then reach out with something relevant to them, such as a new piece that matches their taste.'),
-        ('Is there a tool that writes follow-up messages for me?', 'Veloce AI Messages drafts birthday wishes, new arrival alerts, thank-you notes, quote follow-ups, check-ins and event invites based on the client profile. You get three versions and can pick the tone before sending.'),
     ],
 }

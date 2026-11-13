@@ -34,7 +34,7 @@ GUIDE = {
 <div class="tablewrap"><table>
 <tr><th></th><th>Excel／Google 試算表</th><th>客戶管理 App（熟客簿）</th></tr>
 <tr><td>手機輸入</td><td>不方便</td><td>用講的、或傳 LINE 就能記</td></tr>
-<tr><td>生日與回訪提醒</td><td>沒有</td><td>自動提醒，可一鍵產生問候訊息</td></tr>
+<tr><td>生日與回訪提醒</td><td>沒有</td><td>自動提醒，太久沒聯絡的客人也會列出來</td></tr>
 <tr><td>新貨找買家</td><td>手動篩選</td><td>依願望清單、購買紀錄、喜好自動列出</td></tr>
 <tr><td>資料安全</td><td>檔案容易外流</td><td>加密儲存、生物辨識鎖定</td></tr>
 <tr><td>費用</td><td>免費</td><td>14 天免費試用，之後月繳 NT$399</td></tr>
