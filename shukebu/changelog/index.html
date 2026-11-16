@@ -22,6 +22,10 @@
 .rel time{color:var(--muted);font-size:14px;font-variant-numeric:tabular-nums}
 .rel .now{background:var(--brand);color:#fff;font-size:11.5px;font-weight:800;border-radius:6px;padding:2px 8px}
 .rel .lead{color:var(--ink-2);font-size:15px;margin-top:6px}
+.logtab{border:1px solid var(--line);background:#fff;color:var(--muted);border-radius:999px;padding:7px 16px;font-size:13.5px;font-weight:700;cursor:pointer;font-family:inherit}
+.logtab.on{background:var(--brand);border-color:var(--brand);color:#fff}
+.log.k-app article[id^="svc-"]{display:none}
+.log.k-svc article[id^="v"]{display:none}
 .rel ul{list-style:none;margin-top:12px;display:flex;flex-direction:column;gap:9px}
 .rel li{display:flex;gap:10px;align-items:flex-start;font-size:15px;color:var(--ink-2);line-height:1.65}
 .tag{flex:none;font-size:12px;font-weight:800;border-radius:6px;padding:1px 8px;margin-top:2px;border:1px solid}
@@ -58,6 +62,11 @@
 <section style="padding-block:48px 72px">
   <div class="wrap">
     <p class="note">iOS 與 Android 同步更新；日期為版本送出上架的日期。到 App Store 或 Google Play 更新到最新版即可使用。</p>
+    <div class="logtabs" role="tablist" aria-label="更新類型" style="display:flex;gap:8px;margin-bottom:22px">
+      <button class="logtab on" data-kind="all" type="button">全部</button>
+      <button class="logtab" data-kind="app" type="button">App 更新</button>
+      <button class="logtab" data-kind="svc" type="button">服務更新</button>
+    </div>
     <div class="log">
 
       <article class="rel" id="svc-2026-11-16">
@@ -242,5 +251,19 @@
   </div>
 </footer>
 
+<script>
+(function(){
+  var log=document.querySelector('.log');
+  document.querySelectorAll('.logtab').forEach(function(b){
+    b.addEventListener('click',function(){
+      document.querySelectorAll('.logtab').forEach(function(x){x.classList.remove('on')});
+      b.classList.add('on');
+      log.classList.remove('k-app','k-svc');
+      if(b.dataset.kind==='app')log.classList.add('k-app');
+      if(b.dataset.kind==='svc')log.classList.add('k-svc');
+    });
+  });
+})();
+</script>
 </body>
 </html>
