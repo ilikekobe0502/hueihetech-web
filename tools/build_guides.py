@@ -52,8 +52,17 @@ LANGS = {
                       list_title='판매 직원을 위한 고객 관리 가이드', list_sub='주얼리·시계·명품·보험·부동산·자동차 판매 직원을 위해 CRM 고르는 법, 고객 정보 기록, 팔로업 방법을 정리했어요.',
                       list_desc='판매 직원과 영업 담당자를 위한 고객 관리 가이드. CRM·고객관리 앱 고르는 법, 엑셀 고객 관리, 단골 관리, 생일과 팔로업 리마인더.',
                       company='Hueihe Tech', langs='언어')),
+    'fr': dict(html='fr', home='fr/veloce/', guide='fr/veloce/guide/', name='Veloce', legal='legal/fr/',
+               appstore=f'https://apps.apple.com/fr/app/id{APP_STORE_ID}', play=f'https://play.google.com/store/apps/details?id={PKG}&hl=fr',
+               t=dict(guides='Guides', features='Fonctionnalités', features_href='#features', trial='Essai gratuit 14 jours', updated='Mis à jour', org='Hueihe Tech',
+                      faq='Questions fréquentes', related='Guides associés', cta_title='Envie d’essayer ?',
+                      cta_text='Veloce est une application de suivi client pour les vendeurs de terrain : parlez 30 secondes pour enregistrer un client, recevez des rappels d’anniversaires et de relances, et sachez qui contacter quand une nouveauté arrive. Essai gratuit de 14 jours, sans carte bancaire.',
+                      appstore='Télécharger dans l’App Store', play='Disponible sur Google Play', privacy='Politique de confidentialité', terms='Conditions d’utilisation',
+                      list_title='Guides de gestion client pour vendeurs', list_sub='Pour les vendeurs en bijouterie, horlogerie, luxe, assurance, immobilier et automobile : choisir un CRM, tenir ses fiches clients et ne manquer aucune relance.',
+                      list_desc='Guides pratiques pour vendeurs et commerciaux : choisir un CRM, le clienteling, les fiches clients, les rappels de relance et la gestion des clients sur WhatsApp.',
+                      company='Hueihe Tech', langs='Langue')),
 }
-LANG_LABEL = {'zh-TW': '中文', 'en': 'English', 'ja': '日本語', 'ko': '한국어'}
+LANG_LABEL = {'zh-TW': '中文', 'en': 'English', 'ja': '日本語', 'ko': '한국어', 'fr': 'Français'}
 
 CSS = """
 .guide{max-width:760px;margin:0 auto;padding-block:48px 64px}

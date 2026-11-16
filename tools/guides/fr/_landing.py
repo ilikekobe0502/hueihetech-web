@@ -1,0 +1,25 @@
+LANDING = {
+    'title': 'Veloce : appli CRM de clienteling pour vendeurs',
+    'description': "Veloce est une appli CRM de clienteling pour les vendeurs de terrain. Enregistrez vos clients à la voix, recevez des rappels d'anniversaires et de relances, et trouvez les acheteurs des nouveautés.",
+    'eyebrow': 'Le carnet client des vendeurs de terrain',
+    'h1': 'Souvenez-vous de chaque client.<br>Ne manquez plus aucune relance.',
+    'sub': "Parlez 30 secondes après une visite : Veloce en fait une fiche client, une liste d'envies et des rappels. Quand une nouveauté arrive, il vous dit qui appeler, et pourquoi.",
+    'trial_note': 'Essai gratuit de 14 jours, sans carte bancaire. iOS et Android.',
+    'features_title': 'Pensé pour la boutique, pas pour le back-office',
+    'features_sub': 'Tout ce qu’il faut pour faire revenir vos bons clients, dans votre poche.',
+    'cards': [
+        ('Notes vocales', "Parlez environ 30 secondes après une visite. L'IA en tire les préférences, la liste d'envies, le budget et les rappels de relance. Vous relisez tout avant d'enregistrer."),
+        ('Rappels intelligents', "Anniversaires et dates clés chaque année, prises de nouvelles, échéances d'entretien, relances de devis avant expiration, et clients restés trop longtemps sans contact. Le tout dans une vue calendrier."),
+        ('Trouver les acheteurs', "Choisissez une catégorie ou photographiez un produit. Voyez quels clients le recherchent, qui est susceptible de racheter et quels goûts correspondent, avec les raisons."),
+        ('Importer vos anciens fichiers', "Récupérez vos clients depuis Excel, CSV, des bons de commande PDF, des notes ou la photo d'une page manuscrite. L'IA les classe en achats, préférences, envies et rappels, ignore les doublons, et vous confirmez avant tout enregistrement."),
+        ('Une page par client', "Préférences, tailles, liste d'envies, achats, devis, notes et dates clés au même endroit. Suivez aussi vos objectifs mensuels et vos ventes par catégorie."),
+        ('Vos données restent à vous', "Stockage chiffré et verrouillage biométrique. Le compte est personnel : votre carnet client vous suit si vous changez d'employeur. Modèles pour la bijouterie, l'horlogerie, la maroquinerie de luxe, la mode, l'automobile, l'immobilier et le B2B."),
+    ],
+    'screens_title': 'Voyez-le en action',
+    'shots': [
+        ('voice', "Écran Notes vocales : touchez pour enregistrer et l'IA classe la note dans la fiche client"),
+        ('home', "Écran d'accueil avec l'objectif de ventes du mois et les prochains rappels"),
+        ('match', "Résultats Trouver les acheteurs : clients associés à un collier d'émeraude, avec les raisons"),
+        ('clients', 'Fiche client avec budget, dates clés, préférences et rappels'),
+    ],
+}
