@@ -63,11 +63,10 @@
   <div class="wrap">
     <p class="note">iOS 與 Android 同步更新；日期為版本送出上架的日期。到 App Store 或 Google Play 更新到最新版即可使用。</p>
     <div class="logtabs" role="tablist" aria-label="更新類型" style="display:flex;gap:8px;margin-bottom:22px">
-      <button class="logtab on" data-kind="all" type="button">全部</button>
-      <button class="logtab" data-kind="app" type="button">App 更新</button>
+      <button class="logtab on" data-kind="app" type="button">App 更新</button>
       <button class="logtab" data-kind="svc" type="button">服務更新</button>
     </div>
-    <div class="log">
+    <div class="log k-app">
 
       <article class="rel" id="svc-2026-11-16">
         <div class="hd"><h2>服務更新</h2><time datetime="2026-11-16">2026/11/16</time></div>
@@ -266,15 +265,15 @@
 <script>
 (function(){
   var log=document.querySelector('.log');
+  function show(kind){
+    document.querySelectorAll('.logtab').forEach(function(x){x.classList.toggle('on',x.dataset.kind===kind)});
+    log.classList.remove('k-app','k-svc');
+    log.classList.add(kind==='svc'?'k-svc':'k-app');
+  }
   document.querySelectorAll('.logtab').forEach(function(b){
-    b.addEventListener('click',function(){
-      document.querySelectorAll('.logtab').forEach(function(x){x.classList.remove('on')});
-      b.classList.add('on');
-      log.classList.remove('k-app','k-svc');
-      if(b.dataset.kind==='app')log.classList.add('k-app');
-      if(b.dataset.kind==='svc')log.classList.add('k-svc');
-    });
+    b.addEventListener('click',function(){show(b.dataset.kind)});
   });
+  if(location.hash.indexOf('#svc-')===0){show('svc');var el=document.getElementById(location.hash.slice(1));if(el)el.scrollIntoView();}
 })();
 </script>
 </body>
