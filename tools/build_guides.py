@@ -123,7 +123,8 @@ def page(lang, path, title, desc, body, jsonld, alternates=None, og_type='articl
 <meta property="og:image" content="{SITE}/assets/shukebu-icon.png">
 <meta property="og:url" content="{canonical}">
 <style>{CSS}</style>
-{ld}</head>
+{ld}<script src="/assets/ads.js" defer></script>
+</head>
 <body>
 <header class="site">
   <div class="wrap">
