@@ -14,6 +14,8 @@ LANDING = {
         ('Importer vos anciens fichiers', "Récupérez vos clients depuis Excel, CSV, des bons de commande PDF, des notes ou la photo d'une page manuscrite. L'IA les classe en achats, préférences, envies et rappels, ignore les doublons, et vous confirmez avant tout enregistrement."),
         ('Une page par client', "Préférences, tailles, liste d'envies, achats, devis, notes et dates clés au même endroit. Suivez aussi vos objectifs mensuels et vos ventes par catégorie."),
         ('Vos données restent à vous', "Stockage chiffré et verrouillage biométrique. Le compte est personnel : votre carnet client vous suit si vous changez d'employeur. Modèles pour la bijouterie, l'horlogerie, la maroquinerie de luxe, la mode, l'automobile, l'immobilier et le B2B."),
+        ('Scan de cartes de visite', 'Photographiez une carte de visite et la fiche client se remplit : nom, entreprise, fonction, téléphone, e-mail et adresse. Si un client du même nom existe, seuls les champs vides sont complétés.'),
+        ('Vœux de saison', 'Avant les fêtes de fin d’année, Veloce liste les clients à saluer, rédige un message adapté et les marque comme faits une fois envoyés. Vous pouvez aussi noter les cadeaux offerts et reçus.'),
     ],
     'screens_title': 'Voyez-le en action',
     'shots': [

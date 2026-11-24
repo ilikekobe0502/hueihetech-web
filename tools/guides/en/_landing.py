@@ -14,6 +14,8 @@ LANDING = {
         ('Import old records', 'Bring in client details from Excel, CSV, PDF orders, notes or a photo of a handwritten page. AI sorts them into purchases, preferences, wishlist items and reminders, skips duplicates, and you confirm before anything is saved.'),
         ('One page per client', 'Preferences, sizes, wishlist, purchases, quotes, notes and key dates in one place. Track monthly targets and sales by category too.'),
         ('Your data stays yours', 'Encrypted storage and biometric lock. Your account is personal, so your client book stays with you if you change employer. Templates for jewelry, watches, luxury bags, fashion, cars, real estate and B2B.'),
+        ('Business card scan', 'Snap a business card and the client file is created for you: name, company, title, phone, email and address. If a client with the same name exists, only the empty fields are filled in.'),
+        ('Seasonal greetings', 'Before Christmas and the New Year, Veloce lists the clients to greet, drafts a message that fits the occasion and marks them done once sent. You can also log gifts you send and receive.'),
     ],
     'screens_title': 'See it in action',
     'shots': [
