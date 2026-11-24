@@ -71,3 +71,37 @@ footer.site .fine{margin-top:22px;color:#64748b;font-size:12.5px}
   header.site .wrap{padding-inline:14px}
   .hero{padding-block:64px 52px}
 }
+
+/* ── 網站地圖 v2：共用頁首（tools/site_chrome.py） ── */
+.logo .lt{display:flex;flex-direction:column;line-height:1.15}
+.logo .lt small{font-size:11px;color:var(--muted);font-weight:400}
+nav.main{display:flex;align-items:center;gap:22px}
+nav.main a{margin-left:0;display:inline-flex;align-items:center}
+nav.main a[aria-current="page"]{color:var(--brand);font-weight:700;box-shadow:inset 0 -2px 0 var(--brand)}
+nav.main a.cta,details.menu a.cta{box-shadow:none}
+.soon{background:#fef3c7;color:#92400e;font-size:11px;border-radius:999px;padding:1px 7px;margin-left:6px;font-weight:700;line-height:1.5}
+details.lang{position:relative}
+details.lang summary,details.menu summary{list-style:none;cursor:pointer;display:flex;align-items:center;gap:5px;color:var(--ink-2);font-size:14px}
+details.lang summary::-webkit-details-marker,details.menu summary::-webkit-details-marker{display:none}
+details.lang .pop{position:absolute;right:0;top:34px;background:#fff;border:1px solid var(--line);border-radius:12px;box-shadow:0 12px 30px rgba(15,23,42,.12);padding:6px;display:flex;flex-direction:column;min-width:130px}
+details.lang .pop a{padding:7px 12px;border-radius:8px;color:var(--ink-2);font-size:14px}
+details.lang .pop a:hover{background:var(--teal-soft)}
+details.lang .pop a[aria-current]{color:var(--brand);font-weight:700}
+details.menu{display:none}
+details.menu summary{width:40px;height:40px;justify-content:center;border-radius:10px;background:var(--bg-soft);color:var(--ink)}
+details.menu .sheet{position:absolute;left:0;right:0;top:60px;background:#fff;border-bottom:1px solid var(--line);box-shadow:0 16px 30px rgba(15,23,42,.1);padding:8px 20px 20px;display:flex;flex-direction:column}
+details.menu .sheet>a{padding:14px 2px;border-bottom:1px solid var(--line);color:var(--ink);font-weight:700;font-size:16px}
+details.menu .sheet>a[aria-current="page"]{color:var(--brand)}
+details.menu .sheet .mlang{display:flex;flex-wrap:wrap;align-items:center;gap:10px;padding:14px 2px;color:var(--muted);font-size:14px}
+details.menu .sheet .mlang a{color:var(--ink-2)}
+details.menu .sheet a.cta{margin-top:8px;text-align:center;background:var(--brand);color:#fff;padding:12px;border-radius:12px;font-weight:700;border:0}
+@media (max-width:880px){
+  nav.main{display:none}
+  details.menu{display:block}
+}
+/* ── 共用頁尾 ── */
+footer.site .fcols{display:grid;grid-template-columns:1.4fr repeat(4,minmax(0,1fr));gap:24px}
+footer.site .fcols h4{color:#e2e8f0;font-size:14px;margin-bottom:8px}
+footer.site .fcols p{margin:0 0 6px}
+footer.site .flangs{display:flex;align-items:center;gap:6px;flex-wrap:wrap;margin-top:24px;padding-top:16px;border-top:1px solid #1e293b}
+@media (max-width:760px){footer.site .fcols{grid-template-columns:repeat(2,minmax(0,1fr))}footer.site .fcols>div:first-child{grid-column:1/-1}}

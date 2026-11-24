@@ -107,7 +107,7 @@ def page(lang, path, title, desc, body, jsonld, alternates=None, og_type='articl
     alt = ''.join(f'<link rel="alternate" hreflang="{LANGS[k]["html"]}" href="{SITE}/{v}">\n' for k, v in (alternates or {}).items())
     ld = ''.join(f'<script type="application/ld+json">{json.dumps(x, ensure_ascii=False)}</script>\n' for x in jsonld)
     langs = ''.join(f'<a href="{up(LANGS[k]["home"])}">{LANG_LABEL[k]}</a>' for k in LANGS if k != lang)
-    return f"""<!DOCTYPE html>
+    html = f"""<!DOCTYPE html>
 <html lang="{L['html']}">
 <head>
 <meta charset="utf-8">
@@ -158,6 +158,12 @@ def page(lang, path, title, desc, body, jsonld, alternates=None, og_type='articl
 </body>
 </html>
 """
+    if lang == 'zh-TW':
+        # 中文頁用全站共用的頁首頁尾（網站地圖 v2，tools/site_chrome.py）
+        import re, site_chrome as C
+        html = re.sub(r'<header class="site">.*?</header>', lambda _: C.zh_header(C.active_for('/' + path)), html, count=1, flags=re.S)
+        html = re.sub(r'<footer class="site">.*?</footer>', lambda _: C.zh_footer(), html, count=1, flags=re.S)
+    return html
 
 
 def load(lang):
