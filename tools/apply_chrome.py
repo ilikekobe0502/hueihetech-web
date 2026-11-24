@@ -25,4 +25,16 @@ for f in sorted(glob.glob(os.path.join(ROOT, 'shukebu', '**', 'index.html'), rec
         open(f, 'w', encoding='utf-8').write(new)
         changed += 1
         print('updated', rel)
+for lang in C.INTL:
+    for f in sorted(glob.glob(os.path.join(ROOT, lang, 'veloce', '**', 'index.html'), recursive=True)):
+        rel = os.path.relpath(os.path.dirname(f), ROOT).replace(os.sep, '/')
+        s = open(f, encoding='utf-8').read()
+        if '<header class="site">' not in s:
+            continue
+        new = re.sub(r'<header class="site">.*?</header>', lambda _: C.intl_header(lang, C.intl_active('/' + rel + '/')), s, count=1, flags=re.S)
+        new = re.sub(r'<footer class="site">.*?</footer>', lambda _: C.intl_footer(lang), new, count=1, flags=re.S)
+        if new != s:
+            open(f, 'w', encoding='utf-8').write(new)
+            changed += 1
+            print('updated', rel)
 print('pages changed:', changed)

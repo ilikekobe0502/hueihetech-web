@@ -158,11 +158,14 @@ def page(lang, path, title, desc, body, jsonld, alternates=None, og_type='articl
 </body>
 </html>
 """
+    # 全站共用的頁首頁尾（網站地圖 v2，tools/site_chrome.py）
+    import re, site_chrome as C
     if lang == 'zh-TW':
-        # 中文頁用全站共用的頁首頁尾（網站地圖 v2，tools/site_chrome.py）
-        import re, site_chrome as C
-        html = re.sub(r'<header class="site">.*?</header>', lambda _: C.zh_header(C.active_for('/' + path)), html, count=1, flags=re.S)
-        html = re.sub(r'<footer class="site">.*?</footer>', lambda _: C.zh_footer(), html, count=1, flags=re.S)
+        hdr, ftr = C.zh_header(C.active_for('/' + path)), C.zh_footer()
+    else:
+        hdr, ftr = C.intl_header(lang, C.intl_active('/' + path)), C.intl_footer(lang)
+    html = re.sub(r'<header class="site">.*?</header>', lambda _: hdr, html, count=1, flags=re.S)
+    html = re.sub(r'<footer class="site">.*?</footer>', lambda _: ftr, html, count=1, flags=re.S)
     return html
 
 

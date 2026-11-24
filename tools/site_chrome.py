@@ -72,3 +72,87 @@ def zh_footer() -> str:
     <p class="fine">© 2026 暉和智慧科技有限公司 All rights reserved.</p>
   </div>
 </footer>"""
+
+
+# ───── 英日韓法（Veloce）：只有首頁、指南、下載頁，選單精簡成 功能｜指南｜語言｜免費試用 ─────
+INTL = {
+    'en': dict(features='Features', guides='Guides', trial='Free 14-day trial', download='Download', home='Veloce',
+               tagline='The client book app for sales advisors and shops', product='Product', resources='Resources',
+               company='Company', legal='Legal', company_name='Hueihe Tech', contact='Contact us',
+               privacy='Privacy Policy', terms='Terms of Service', delete='Delete account', menu='Open menu', nav='Main menu',
+               dl=True),
+    'ja': dict(features='機能', guides='顧客管理ガイド', trial='14日間無料で試す', download='ダウンロード', home='Veloce',
+               tagline='販売スタッフと店舗のための顧客管理アプリ', product='製品', resources='ガイド',
+               company='会社', legal='規約', company_name='Hueihe Tech', contact='お問い合わせ',
+               privacy='プライバシーポリシー', terms='利用規約', delete='アカウントの削除', menu='メニューを開く', nav='メインメニュー',
+               dl=True),
+    'ko': dict(features='기능', guides='고객 관리 가이드', trial='14일 무료 체험', download='다운로드', home='Veloce',
+               tagline='판매 상담사와 매장을 위한 고객 관리 앱', product='제품', resources='가이드',
+               company='회사', legal='약관', company_name='Hueihe Tech', contact='문의하기',
+               privacy='개인정보처리방침', terms='이용약관', delete='계정 삭제', menu='메뉴 열기', nav='주 메뉴',
+               dl=False),
+    'fr': dict(features='Fonctionnalités', guides='Guides', trial='Essai gratuit 14 jours', download='Télécharger', home='Veloce',
+               tagline="L'app de suivi client pour vendeurs et boutiques", product='Produit', resources='Ressources',
+               company='Entreprise', legal='Mentions légales', company_name='Hueihe Tech', contact='Nous contacter',
+               privacy='Politique de confidentialité', terms="Conditions d'utilisation", delete='Supprimer le compte', menu='Ouvrir le menu', nav='Menu principal',
+               dl=False),
+}
+LANG_NAME = {'en': 'English', 'ja': '日本語', 'ko': '한국어', 'fr': 'Français'}
+
+
+def intl_active(path: str) -> str:
+    return 'guides' if '/guide' in path else ''
+
+
+def _intl_links(lang):
+    t = INTL[lang]
+    base = f'/{lang}/veloce/'
+    cta = base + ('download/' if t['dl'] else '#download')
+    return t, base, cta
+
+
+def intl_header(lang: str, active: str = '') -> str:
+    t, base, cta = _intl_links(lang)
+    cur = ' aria-current="page"'
+    items = [('features', t['features'], base + '#features'), ('guides', t['guides'], base + 'guide/')]
+    links = ''.join(f'<a href="{h}"{cur if k == active else ""}>{lab}</a>' for k, lab, h in items)
+    cur_lang = ' aria-current="true"'
+    langs = ''.join(f'<a href="{h}"{cur_lang if h == base else ""}>{n}</a>' for n, h in LANGS)
+    cta_html = f'<a class="cta" href="{cta}">{t["trial"]}</a>'
+    return f"""<header class="site">
+  <div class="wrap">
+    <a class="logo" href="{base}"><img src="/assets/shukebu-icon.png" alt="Veloce"><span class="lt"><b>Veloce</b><small>by Hueihe Tech</small></span></a>
+    <nav class="main" aria-label="{t['nav']}">
+      {links}
+      <details class="lang"><summary>{GLOBE}{LANG_NAME[lang]}</summary><div class="pop">{langs}</div></details>
+      {cta_html}
+    </nav>
+    <details class="menu"><summary aria-label="{t['menu']}">{MENU}</summary>
+      <div class="sheet">{links}<div class="mlang">{GLOBE}{langs}</div>{cta_html}</div>
+    </details>
+  </div>
+</header>"""
+
+
+def intl_footer(lang: str) -> str:
+    t, base, cta = _intl_links(lang)
+    col = lambda title, rows: (f'<div><h4>{title}</h4>' + ''.join(f'<p><a href="{h}">{x}</a></p>' for x, h in rows) + '</div>')
+    langs = ' · '.join(f'<a href="{h}">{n}</a>' for n, h in LANGS)
+    legal = f'/legal/{lang}/'
+    return f"""<footer class="site">
+  <div class="wrap">
+    <div class="fcols">
+      <div>
+        <div class="brandline"><img src="/assets/shukebu-icon.png" alt="">Veloce</div>
+        <p style="margin-top:10px">{t['tagline']}<br>by Hueihe Tech</p>
+        <p><a href="mailto:support@hueihetech.com">support@hueihetech.com</a></p>
+      </div>
+      {col(t['product'], [(t['features'], base + '#features'), (t['download'], cta)])}
+      {col(t['resources'], [(t['guides'], base + 'guide/')])}
+      {col(t['company'], [(t['company_name'], '/'), (t['contact'], 'mailto:support@hueihetech.com')])}
+      {col(t['legal'], [(t['privacy'], legal + 'privacy.html'), (t['terms'], legal + 'terms.html'), (t['delete'], legal + 'delete-account.html')])}
+    </div>
+    <p class="fine flangs">{GLOBE} {langs}</p>
+    <p class="fine">© 2026 Hueihe Tech. All rights reserved.</p>
+  </div>
+</footer>"""
